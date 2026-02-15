@@ -1,0 +1,13 @@
+:root{
+  --bg:#cfe8ff;
+  --ground:#6aa84f;
+  --road:#7f7f7f;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(#eaf6ff, #cfe8ff);min-height:100vh;display:flex;align-items:center;justify-content:center}
+main{width:950px;padding:18px;text-align:center}
+h1{margin-bottom:6px}
+.hint{color:#333;margin-bottom:8px}
+.canvas-wrap{background:linear-gradient(#e6f0ff,#d6eaff);padding:8px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.12)}
+canvas{display:block;background:transparent;border-radius:4px}
+.credits{margin-top:8px;color:#444}
