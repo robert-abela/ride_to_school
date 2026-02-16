@@ -62,7 +62,7 @@ Start on the left, walk to the school transport, **board**, drive forward while 
 
 - `index.html` — Bootstraps the canvas and loads `js/game.js`.
 - `js/game.js` — All gameplay, rendering, audio, and state logic (no external assets).
-- `css/style.css` — *(Optional)* A stylesheet link exists in `index.html`. Gameplay does not depend on it.
+- `css/style.css` — A stylesheet link exists in `index.html` (gameplay does not depend on it).
 
 ---
 
