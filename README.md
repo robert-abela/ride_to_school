@@ -24,7 +24,7 @@ A small browser game where you help a student board a school transport and make 
 
 3. **Play:**
    - **Start:** Press **Space** at the start screen.
-   - **Move on foot:** **← / →** arrow keys.
+   - **Move:** **← / →** arrow keys.
    - **Board/Exit the bus:** Press **Space** when prompted.
 
 > **Note:** A/D keys are *not* used. Movement is strictly with the **Arrow** keys, and actions with **Space**.
