@@ -118,4 +118,4 @@ Adjust these in `js/game.js` if you want to tweak the feel:
 
 ## License
 
-MIT (or your preferred license). Replace this section if needed.
+MIT.
