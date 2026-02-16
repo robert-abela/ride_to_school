@@ -18,7 +18,6 @@ Play at: https://robert-abela.github.io/ride_to_school.
    └─ js/
       └─ game.js          # the main game logic
    ```
-   > If your files are currently in the project root, create the `js/` (and optionally `css/`) folders and move the files accordingly, or update the `<script>` and `<link>` paths in `index.html`.
 
 2. **Run locally:**
    - Easiest: just open `index.html` in a modern desktop browser (Chrome/Edge/Firefox/Safari).  
@@ -28,8 +27,6 @@ Play at: https://robert-abela.github.io/ride_to_school.
    - **Start:** Press **Space** at the start screen.
    - **Move:** **← / →** arrow keys.
    - **Board/Exit the bus:** Press **Space** when prompted.
-
-> **Note:** A/D keys are *not* used. Movement is strictly with the **Arrow** keys, and actions with **Space**.
 
 ---
 
@@ -66,18 +63,6 @@ Start on the left, walk to the school transport, **board**, drive forward while 
 - `index.html` — Bootstraps the canvas and loads `js/game.js`.
 - `js/game.js` — All gameplay, rendering, audio, and state logic (no external assets).
 - `css/style.css` — *(Optional)* A stylesheet link exists in `index.html`. Gameplay does not depend on it.
-
-> `index.html` currently expects the script at `js/game.js` and the stylesheet at `css/style.css`. If you prefer to keep files flat in the project root, change these lines in `index.html` accordingly:
->
-> ```html
-> <!-- From -->
-> <link rel="stylesheet" href="css/style.css">
-> <script src="js/game.js"></script>
->
-> <!-- To (flat layout) -->
-> <link rel="stylesheet" href="style.css"> <!-- or remove if not using CSS -->
-> <script src="game.js"></script>
-> ```
 
 ---
 
