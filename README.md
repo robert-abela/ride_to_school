@@ -1,7 +1,9 @@
 
 # Ride to School — 2D Canvas Game
 
-A small browser game where you help a student board a school transport and make it safely to the school entrance. Built with plain HTML5 Canvas and vanilla JavaScript—no frameworks.
+A small browser game where you help a student board a school transport and make it safely to the school entrance. Built with plain HTML5 Canvas and vanilla JavaScript—no frameworks.  
+
+Play at: https://robert-abela.github.io/ride_to_school.
 
 ---
 
@@ -44,7 +46,7 @@ Start on the left, walk to the school transport, **board**, drive forward while 
 - **School transport**: Smaller black bus with stripe, sliding door animation, engine sound that reacts to movement, arrival beep, and window placement for the player.
 - **Traffic**: Colorful cars drive in the same direction. Contact while walking/stair-descending triggers **Game Over**.
 - **Environment**: Parallax city backdrop, trees, road, descending stairs, and a three‑storey school labeled **“St. Francis Cospicua”** with windows and a large wooden entrance door.
-- **Audio**: WebAudio beeps for boarding/arrival, step ticks while walking, a trumpet flourish on victory, and a simple engine hum when the bus moves. Audio is created programmatically—no external files required. Some browsers mute audio until you interact (press **Space**).
+- **Audio**: WebAudio beeps for boarding/arrival, step ticks while walking, a trumpet flourish on victory, and a simple engine hum when the bus moves. Audio is created programmatically—no external files required.
 - **Camera**: Horizontal scrolling that keeps the action centered and frames the school facade when you arrive.
 
 ---
