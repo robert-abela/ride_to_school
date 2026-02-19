@@ -807,7 +807,7 @@
             ctx.fillText('🎉  Made it to class!', W / 2, H / 2 - 28);
             ctx.fillStyle = '#fff';
             ctx.font = '18px sans-serif';
-            ctx.fillText('You reached year3.3 — well done!', W / 2, H / 2 + 10);
+            ctx.fillText('You reached Year 3.3 — well done!', W / 2, H / 2 + 10);
             ctx.fillStyle = '#aaa';
             ctx.font = '13px sans-serif';
             ctx.fillText('Refresh to play again', W / 2, H / 2 + 40);
