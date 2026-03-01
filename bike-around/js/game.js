@@ -580,7 +580,8 @@
       stopSiren();
       greetElapsed += dt;
       drawGreeting(lvl, greetElapsed);
-      if (greetElapsed >= lvl.greetSeconds) advanceAfterGreet();
+      if (greetElapsed >= lvl.greetSeconds) 
+        advanceAfterGreet();
       requestAnimationFrame(tick);
       return;
     }
@@ -593,10 +594,12 @@
 
       const crashTitle = (lastCrashType === "police") ? "Police crash!" : "Car crash!";
       const crashSub   = (lastCrashType === "police") ? "Jail time (game over)" : "Ambulance is here!";
-      drawOverlayText(["Oh no!", crashTitle], ["Click Start to try again", crashSub]);
+      drawOverlayText(["Oh no!", crashTitle], [crashSub, "Press [Space] to try again"]);
 
-      if (lastCrashType === "police") drawJail(W/2 - 90, 360);
-      else drawAmbulance(W/2 - 85, 390);
+      if (lastCrashType === "police") 
+        drawJail(W/2 - 90, 360);
+      else 
+        drawAmbulance(W/2 - 85, 390);
 
       requestAnimationFrame(tick);
       return;
@@ -608,14 +611,15 @@
     distancePill.textContent = clamp(pct, 0, 100) + "%";
 
     const exitStartsAt = lvl.distanceTarget - 420;
-    if (distance >= exitStartsAt) exitActive = true;
-if (missedExitMessageTimer > 0) {
-  missedExitMessageTimer -= dt;
-  if (missedExitMessageTimer <= 0) {
-    missedExitMessageTimer = 0;
-    missedExitLatched = false;  // ✅ unlock once message duration ends
-  }
-}
+    if (distance >= exitStartsAt) 
+      exitActive = true;
+    if (missedExitMessageTimer > 0) {
+      missedExitMessageTimer -= dt;
+      if (missedExitMessageTimer <= 0) {
+        missedExitMessageTimer = 0;
+        missedExitLatched = false;  // unlock once message duration ends
+      }
+    }
     // lane change (kid-friendly cooldown)
     player.cooldown -= dt;
     if (player.cooldown < 0) player.cooldown = 0;
@@ -639,7 +643,8 @@ if (missedExitMessageTimer > 0) {
     spawnTimer += dt * 1000;
     if (spawnTimer >= lvl.carEvery) {
       spawnTimer = 0;
-      if (!(exitActive && distance > lvl.distanceTarget - 160)) spawnObstacle(lvl, speed);
+      if (!(exitActive && distance > lvl.distanceTarget - 160)) 
+        spawnObstacle(lvl, speed);
     }
 
     // move obstacles
@@ -648,7 +653,10 @@ if (missedExitMessageTimer > 0) {
 
     // siren management
     const policePresent = obstacles.some(o => o.type === "police");
-    if (policePresent) startSiren(); else stopSiren();
+    if (policePresent) 
+      startSiren(); 
+    else 
+      stopSiren();
     updateSiren(dt);
 
     // collisions (slightly smaller hitbox for top-down sprite)
